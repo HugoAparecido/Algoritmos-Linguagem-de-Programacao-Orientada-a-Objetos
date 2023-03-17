@@ -1,37 +1,28 @@
-#include <stdio.h>
-#include <string.h>
-
-int main (){
-
-	char texto[110],c;
-	unsigned short tam, metadeTam;
-	unsigned casos, i;
-
-	scanf("%u", &casos);
-
-	// Limpar o buffer para a próxima entrada;
-	setbuf(stdin, NULL);
-
-	while (casos)
-	{	
-		//"%[\^n]" para o problema dos espaços;
-		scanf("%[^\n]", texto);
-
-		// Limpar o buffer para o laço não entrar em um loop;
-		setbuf(stdin, NULL);
-		
-		tam = strlen(texto);
-		metadeTam = tam/2;
-
-		for (i = metadeTam-1; i < -1; i--)
-			printf("%c", texto[i]);
-
-		for (i = tam-1; i >= metadeTam; i--)
-			printf("%c", texto[i]);
-
-
-		printf("\n");
-		
-	casos--;
-	}
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    int N,i,j,k,l,m,n;
+    char name[150],r_name[150],nm[150];
+    scanf("%d",&N);
+    for(i=0; i<=N; i++){
+        gets(name);
+        if(i==0){
+            continue;
+        }
+        l=strlen(name);
+        k=l/2;
+        for(m=0,j=k-1; j>=0; j--){
+            r_name[m]=name[j];
+            m++;
+        }
+        for(j=l-1; j>=k; j--){
+            r_name[m]=name[j];
+            m++;
+        }
+        r_name[m]='\0';
+        printf("%s\n",r_name);
+        m=0;
+    }
+    return 0;
 }
