@@ -1,26 +1,25 @@
-#include <iostream>
-#include <cmath>
-using namespace std;
-float delta(float num1, float num2, float num3)
-{
-    return num2 * num2 - 4.0 * num1 * num3;
+#include <stdio.h>
+#include <math.h>
+float calculoDelta(float ){
+    return (b * b) - 4 * a * c)
 }
-float bhaskaraAdicao(float num1, float num2, float delt)
+float bhaskaraPositivo(float num1, float num2, float delta)
 {
-    return (-num2 + sqrt(delt)) / (2.0 * num1);
-}
-float bhaskarasubtracao(float num1, float num2, float delt)
-{
-    return (-num2 - sqrt(delt)) / (2.0 * num1);
+    return ((-num2 + t) / (2 * num1))
 }
 int main()
 {
+    double a, b, c, t;
+    scanf("%lf %lf %lf", &a, &b, &c);
 
-    float A, B, C, delta;
-    cin >> A;
-    cin >> B;
-    cin >> C;
-    if (A != 0 && delta(A, B, C)<=0)
-
-        return 0;
+    if (((b * b) - 4 * a * c) < 0 || a == 0)
+    {
+        printf("Impossivel calcular\n");
+    }
+    else
+    {
+        t = sqrt((b * b) - 4 * a * c);
+        printf("R1 = %.5lf\nR2 = %.5lf\n", ((-b + t) / (2 * a)), ((-b - t) / (2 * a)));
+    }
+    return 0;
 }
