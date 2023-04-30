@@ -12,33 +12,46 @@ class Veiculo
     //Métodos da Classe Veiculo
     public void CalcularPreco()
     {
-        if (this.tipoConbustivel == "gasolina")
+        switch (this.tipoConbustivel)
         {
-            this.preco *= 1.05; 
-        }else if(this.tipoConbustivel == "etanol")
-        {
-            this.preco += 1.02;
-        }else if (this.tipoConbustivel == "flex")
-        {
-            this.preco *= 1.07;
+            case "gasolina":
+                this.preco *= 1.05;
+                break;
+            case "etanol":
+                this.preco *= 1.02;
+                break;
+            case "flex":
+                this.preco *= 1.07;
+                break;
+            case "Gasolina":
+                this.preco *= 1.05;
+                break;
+            case "Etanol":
+                this.preco *= 1.02;
+                break;
+            case "Flex":
+                this.preco *= 1.07;
+                break;
+
         }
     }
     public void CalcularConsumo()
     {
         Console.Write("Informe o valor atual do combustível a ser usado: ");
-        var precoCombustivel = Convert.ToDouble(Console.ReadLine);
-        Console.WriteLine("O consumo do veículo para cada quilômetro rodado é : " + ((100 / 15)*precoCombustivel));
-        /*100/15*valor*/
+        var precoCombustivel = Convert.ToDouble(Console.ReadLine());
+        this.consumo = (100 / 15 * precoCombustivel);
     }
     public void MostrarDados()
     {
+        this.CalcularPreco();
+        this.CalcularConsumo();
         Console.WriteLine("Código do Veículo: " + this.codigo);
         Console.WriteLine("Fabricante do Veículo: " + this.fabricante);
         Console.WriteLine("Modelo do Veículo: " + this.modelo);
         Console.WriteLine("Ano de fabricação do Veículo: " + this.ano);
         Console.WriteLine("Preço do Veículo: " + this.preco);
         Console.WriteLine("Tipo de combustível do Veículo: " + this.tipoConbustivel);
-        Console.WriteLine("Quantidade de consumo: " + this.preco);
+        Console.WriteLine("Quantidade de consumo: " + this.consumo);
     }
 }
 class Program
@@ -51,6 +64,14 @@ class Program
         Veiculo v = new();
         Console.Write("Informe o código do veículo: ");
         v.codigo = Convert.ToInt32(Console.ReadLine());
-        Console.Write("");
+        Console.Write("Informe a fabricante do veículo: ");
+        v.fabricante = Console.ReadLine();
+        Console.Write("Informe o modelo do veículo: ");
+        v.modelo = Console.ReadLine();
+        Console.Write("Informe o ano de fabricação do veículo: ");
+        v.ano = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Informe o tipo de combustível utilizado: ");
+        v.tipoConbustivel = Console.ReadLine();
+        v.MostrarDados();
     }
 }
