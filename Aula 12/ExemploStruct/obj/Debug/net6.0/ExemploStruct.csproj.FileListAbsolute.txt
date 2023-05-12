@@ -1,0 +1,15 @@
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\ExemploStruct\bin\Debug\net6.0\ExemploStruct.exe
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\ExemploStruct\bin\Debug\net6.0\ExemploStruct.deps.json
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\ExemploStruct\bin\Debug\net6.0\ExemploStruct.runtimeconfig.json
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\ExemploStruct\bin\Debug\net6.0\ExemploStruct.dll
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\ExemploStruct\bin\Debug\net6.0\ExemploStruct.pdb
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\ExemploStruct\obj\Debug\net6.0\ExemploStruct.csproj.AssemblyReference.cache
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\ExemploStruct\obj\Debug\net6.0\ExemploStruct.GeneratedMSBuildEditorConfig.editorconfig
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\ExemploStruct\obj\Debug\net6.0\ExemploStruct.AssemblyInfoInputs.cache
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\ExemploStruct\obj\Debug\net6.0\ExemploStruct.AssemblyInfo.cs
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\ExemploStruct\obj\Debug\net6.0\ExemploStruct.csproj.CoreCompileInputs.cache
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\ExemploStruct\obj\Debug\net6.0\ExemploStruct.dll
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\ExemploStruct\obj\Debug\net6.0\refint\ExemploStruct.dll
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\ExemploStruct\obj\Debug\net6.0\ExemploStruct.pdb
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\ExemploStruct\obj\Debug\net6.0\ExemploStruct.genruntimeconfig.cache
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\ExemploStruct\obj\Debug\net6.0\ref\ExemploStruct.dll
