@@ -6,11 +6,11 @@ namespace Exercicio1
         public struct Candidata
         {
             public int numeroInscricao;
-            public string nome;
+            public string? nome;
             public float altura;
             public float peso;
-            public string naturalidade;
-            public string estado;
+            public string? naturalidade;
+            public string? estado;
         }
         static void Main(string[] args) 
         {

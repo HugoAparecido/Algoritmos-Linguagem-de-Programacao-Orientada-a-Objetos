@@ -1,0 +1,15 @@
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\Exercicio3\bin\Debug\net6.0\Exercicio3.exe
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\Exercicio3\bin\Debug\net6.0\Exercicio3.deps.json
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\Exercicio3\bin\Debug\net6.0\Exercicio3.runtimeconfig.json
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\Exercicio3\bin\Debug\net6.0\Exercicio3.dll
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\Exercicio3\bin\Debug\net6.0\Exercicio3.pdb
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\Exercicio3\obj\Debug\net6.0\Exercicio3.csproj.AssemblyReference.cache
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\Exercicio3\obj\Debug\net6.0\Exercicio3.GeneratedMSBuildEditorConfig.editorconfig
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\Exercicio3\obj\Debug\net6.0\Exercicio3.AssemblyInfoInputs.cache
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\Exercicio3\obj\Debug\net6.0\Exercicio3.AssemblyInfo.cs
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\Exercicio3\obj\Debug\net6.0\Exercicio3.csproj.CoreCompileInputs.cache
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\Exercicio3\obj\Debug\net6.0\Exercicio3.dll
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\Exercicio3\obj\Debug\net6.0\refint\Exercicio3.dll
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\Exercicio3\obj\Debug\net6.0\Exercicio3.pdb
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\Exercicio3\obj\Debug\net6.0\Exercicio3.genruntimeconfig.cache
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 12\Exercicio3\obj\Debug\net6.0\ref\Exercicio3.dll
