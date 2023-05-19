@@ -1,0 +1,15 @@
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 13\SobrecargaMetodos2\bin\Debug\net6.0\SobrecargaMetodos2.exe
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 13\SobrecargaMetodos2\bin\Debug\net6.0\SobrecargaMetodos2.deps.json
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 13\SobrecargaMetodos2\bin\Debug\net6.0\SobrecargaMetodos2.runtimeconfig.json
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 13\SobrecargaMetodos2\bin\Debug\net6.0\SobrecargaMetodos2.dll
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 13\SobrecargaMetodos2\bin\Debug\net6.0\SobrecargaMetodos2.pdb
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 13\SobrecargaMetodos2\obj\Debug\net6.0\SobrecargaMetodos2.csproj.AssemblyReference.cache
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 13\SobrecargaMetodos2\obj\Debug\net6.0\SobrecargaMetodos2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 13\SobrecargaMetodos2\obj\Debug\net6.0\SobrecargaMetodos2.AssemblyInfoInputs.cache
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 13\SobrecargaMetodos2\obj\Debug\net6.0\SobrecargaMetodos2.AssemblyInfo.cs
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 13\SobrecargaMetodos2\obj\Debug\net6.0\SobrecargaMetodos2.csproj.CoreCompileInputs.cache
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 13\SobrecargaMetodos2\obj\Debug\net6.0\SobrecargaMetodos2.dll
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 13\SobrecargaMetodos2\obj\Debug\net6.0\refint\SobrecargaMetodos2.dll
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 13\SobrecargaMetodos2\obj\Debug\net6.0\SobrecargaMetodos2.pdb
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 13\SobrecargaMetodos2\obj\Debug\net6.0\SobrecargaMetodos2.genruntimeconfig.cache
+D:\Atividades de programação e desenvolvimento feitos no Instituto Federal\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\Aula 13\SobrecargaMetodos2\obj\Debug\net6.0\ref\SobrecargaMetodos2.dll
