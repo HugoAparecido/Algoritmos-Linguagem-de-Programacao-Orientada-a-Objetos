@@ -48,3 +48,21 @@ Aula 12/Exercicio1/.vs/Exercicio1/FileContentIndex/b968e8e2-29aa-4fd8-8781-91320
 Aula 12/Exercicio1/.vs/Exercicio1/FileContentIndex/b968e8e2-29aa-4fd8-8781-9132017ab424.vsidx
 Aula 12/Exercicio1/.vs/Exercicio1/v17/.suo
 Aula 12/Exercicio1/.vs/Exercicio1/FileContentIndex/b968e8e2-29aa-4fd8-8781-9132017ab424.vsidx
+*.vsidx
+*.v2
+*.lock
+Aula 14/CalculadoraSobrecargaDeMetodos/.vs/CalculadoraSobrecargaDeMetodos/v17/.suo
+*.dll
+*.exe
+*.pdb
+*.csproj
+*.sln
+*.props
+*.targets
+*.cache
+*.BuildWithSkipAnalyzers
+*.txt
+*.editorconfig
+*.v2
+*.v2
+*.vsidx
