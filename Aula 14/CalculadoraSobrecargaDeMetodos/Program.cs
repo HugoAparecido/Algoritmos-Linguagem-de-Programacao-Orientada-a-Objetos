@@ -42,16 +42,16 @@
                     resultado = calculadora.Operacao(calculadora.num1, calculadora.num2);
                     break;
                 case "-":
-                    calculadora.num3 = (int)calculadora.num1;
+                    calculadora.num3 = Convert.ToInt32(calculadora.num1);
                     resultado = calculadora.Operacao(calculadora.num3, calculadora.num2);
                     break;
                 case "*":
-                    calculadora.num3 = (int)calculadora.num2;
+                    calculadora.num3 = Convert.ToInt32(calculadora.num2);
                     resultado = calculadora.Operacao(calculadora.num1, calculadora.num3);
                     break;
                 case "/":
-                    calculadora.num3 = (int)calculadora.num1;
-                    calculadora.num4 = (int)calculadora.num2;
+                    calculadora.num3 = Convert.ToInt32(calculadora.num1);
+                    calculadora.num4 = Convert.ToInt32(calculadora.num2);
                     resultado = (double)calculadora.Operacao(calculadora.num3, calculadora.num4);
                     break;
                 default:
