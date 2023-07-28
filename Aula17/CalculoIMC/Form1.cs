@@ -12,7 +12,7 @@ namespace CalculoIMC
             public double peso;
             public double CalcularIMC()
             {
-                return this.peso / this.altura;
+                return this.peso / (this.altura * this.altura);
             }
             public void Classificacao()
             {
