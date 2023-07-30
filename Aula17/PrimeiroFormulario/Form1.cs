@@ -34,57 +34,74 @@ namespace PrimeiroFormulario
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-            Calcular c = new Calcular();
-            c.valor1 = Convert.ToDouble(textBox1.Text);
-            c.valor2 = Convert.ToDouble(textBox2.Text);
+            Calcular c = new()
+            {
+                valor1 = Convert.ToDouble(textBox1.Text),
+                valor2 = Convert.ToDouble(textBox2.Text)
+            };
             resultado.Text = Convert.ToString(c.Soma());
+            conta.Text = "+";
             MessageBox.Show("Bom dia. Você calculou a soma");
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void Label3_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void TextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void TextBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void subtracao_Click(object sender, EventArgs e)
+        private void Subtracao_Click(object sender, EventArgs e)
         {
-            Calcular c = new Calcular();
-            c.valor1 = Convert.ToDouble(textBox1.Text);
-            c.valor2 = Convert.ToDouble(textBox2.Text);
+            Calcular c = new()
+            {
+                valor1 = Convert.ToDouble(textBox1.Text),
+                valor2 = Convert.ToDouble(textBox2.Text)
+            };
             resultado.Text = Convert.ToString(c.Subtracao());
+            conta.Text = "-";
             MessageBox.Show("Bom dia. Você calculou a subtração");
         }
 
-        private void multiplicacao_Click(object sender, EventArgs e)
+        private void Multiplicacao_Click(object sender, EventArgs e)
         {
 
-            Calcular c = new Calcular();
-            c.valor1 = Convert.ToDouble(textBox1.Text);
-            c.valor2 = Convert.ToDouble(textBox2.Text);
+            Calcular c = new()
+            {
+                valor1 = Convert.ToDouble(textBox1.Text),
+                valor2 = Convert.ToDouble(textBox2.Text)
+            };
             resultado.Text = Convert.ToString(c.Multiplicacao());
+            conta.Text = "*";
             MessageBox.Show("Bom dia. Você calculou a multiplicação");
         }
 
-        private void divisao_Click(object sender, EventArgs e)
+        private void Divisao_Click(object sender, EventArgs e)
         {
 
-            Calcular c = new Calcular();
-            c.valor1 = Convert.ToDouble(textBox1.Text);
-            c.valor2 = Convert.ToDouble(textBox2.Text);
+            Calcular c = new()
+            {
+                valor1 = Convert.ToDouble(textBox1.Text),
+                valor2 = Convert.ToDouble(textBox2.Text)
+            };
             resultado.Text = Convert.ToString(c.Divisao());
+            conta.Text = "/";
             MessageBox.Show("Bom dia. Você calculou a divisão");
+        }
+
+        private void Label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

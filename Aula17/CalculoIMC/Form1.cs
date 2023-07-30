@@ -42,11 +42,13 @@ namespace CalculoIMC
                 }
             }
         }
-        private void calcularIMC_Click(object sender, EventArgs e)
+        private void CalcularIMC_Click(object sender, EventArgs e)
         {
-            Pessoa pessoa = new Pessoa();
-            pessoa.altura = Convert.ToDouble(altura.Text);
-            pessoa.peso = Convert.ToDouble(peso.Text);
+            Pessoa pessoa = new()
+            {
+                altura = Convert.ToDouble(altura.Text),
+                peso = Convert.ToDouble(peso.Text)
+            };
             imc.Text = Convert.ToString(pessoa.CalcularIMC());
             pessoa.Classificacao();
         }

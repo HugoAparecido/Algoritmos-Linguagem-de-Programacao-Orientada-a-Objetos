@@ -83,7 +83,7 @@
             organizarNomes.TabIndex = 5;
             organizarNomes.Text = "Organizar em ordem alfabética";
             organizarNomes.UseVisualStyleBackColor = true;
-            organizarNomes.Click += organizarNomes_Click;
+            organizarNomes.Click += OrganizarNomes_Click;
             // 
             // Form1
             // 

@@ -45,7 +45,7 @@
             calcularIMC.TabIndex = 0;
             calcularIMC.Text = "Calcular IMC";
             calcularIMC.UseVisualStyleBackColor = true;
-            calcularIMC.Click += calcularIMC_Click;
+            calcularIMC.Click += CalcularIMC_Click;
             // 
             // altura
             // 

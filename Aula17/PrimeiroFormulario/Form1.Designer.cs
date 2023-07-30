@@ -38,27 +38,29 @@
             multiplicacao = new Button();
             divisao = new Button();
             subtracao = new Button();
+            conta = new Label();
+            label4 = new Label();
             SuspendLayout();
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(216, 98);
+            textBox1.Location = new Point(240, 53);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(125, 27);
             textBox1.TabIndex = 0;
-            textBox1.TextChanged += textBox1_TextChanged;
+            textBox1.TextChanged += TextBox1_TextChanged;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(216, 153);
+            textBox2.Location = new Point(240, 106);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(125, 27);
             textBox2.TabIndex = 1;
-            textBox2.TextChanged += textBox2_TextChanged;
+            textBox2.TextChanged += TextBox2_TextChanged;
             // 
             // resultado
             // 
-            resultado.Location = new Point(216, 206);
+            resultado.Location = new Point(520, 80);
             resultado.Name = "resultado";
             resultado.Size = new Size(125, 27);
             resultado.TabIndex = 2;
@@ -71,12 +73,12 @@
             soma.TabIndex = 3;
             soma.Text = "Soma";
             soma.UseVisualStyleBackColor = true;
-            soma.Click += button1_Click;
+            soma.Click += Button1_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(155, 101);
+            label1.Location = new Point(179, 56);
             label1.Name = "label1";
             label1.Size = new Size(55, 20);
             label1.TabIndex = 4;
@@ -85,7 +87,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(155, 156);
+            label2.Location = new Point(179, 109);
             label2.Name = "label2";
             label2.Size = new Size(55, 20);
             label2.TabIndex = 5;
@@ -94,12 +96,12 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(135, 209);
+            label3.Location = new Point(416, 83);
             label3.Name = "label3";
             label3.Size = new Size(75, 20);
             label3.TabIndex = 6;
             label3.Text = "Resultado";
-            label3.Click += label3_Click;
+            label3.Click += Label3_Click;
             // 
             // multiplicacao
             // 
@@ -109,7 +111,7 @@
             multiplicacao.TabIndex = 7;
             multiplicacao.Text = "Multiplicação";
             multiplicacao.UseVisualStyleBackColor = true;
-            multiplicacao.Click += multiplicacao_Click;
+            multiplicacao.Click += Multiplicacao_Click;
             // 
             // divisao
             // 
@@ -119,7 +121,7 @@
             divisao.TabIndex = 8;
             divisao.Text = "Divisão";
             divisao.UseVisualStyleBackColor = true;
-            divisao.Click += divisao_Click;
+            divisao.Click += Divisao_Click;
             // 
             // subtracao
             // 
@@ -129,13 +131,33 @@
             subtracao.TabIndex = 9;
             subtracao.Text = "Subtração";
             subtracao.UseVisualStyleBackColor = true;
-            subtracao.Click += subtracao_Click;
+            subtracao.Click += Subtracao_Click;
+            // 
+            // conta
+            // 
+            conta.AutoSize = true;
+            conta.Location = new Point(291, 83);
+            conta.Name = "conta";
+            conta.Size = new Size(0, 20);
+            conta.TabIndex = 10;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(495, 83);
+            label4.Name = "label4";
+            label4.Size = new Size(19, 20);
+            label4.TabIndex = 11;
+            label4.Text = "=";
+            label4.Click += Label4_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label4);
+            Controls.Add(conta);
             Controls.Add(subtracao);
             Controls.Add(divisao);
             Controls.Add(multiplicacao);
@@ -165,5 +187,7 @@
         private Button multiplicacao;
         private Button divisao;
         private Button subtracao;
+        private Label conta;
+        private Label label4;
     }
 }
