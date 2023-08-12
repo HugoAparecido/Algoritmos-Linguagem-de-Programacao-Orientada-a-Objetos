@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCadastro));
             nome = new Label();
             email = new Label();
             sobrenome = new Label();
@@ -41,12 +42,17 @@
             confirmarSenhaText = new TextBox();
             button1 = new Button();
             senhaText = new TextBox();
+            label2 = new Label();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // nome
             // 
             nome.AutoSize = true;
-            nome.Location = new Point(291, 55);
+            nome.Location = new Point(20, 74);
             nome.Name = "nome";
             nome.Size = new Size(50, 20);
             nome.TabIndex = 0;
@@ -55,7 +61,7 @@
             // email
             // 
             email.AutoSize = true;
-            email.Location = new Point(289, 162);
+            email.Location = new Point(17, 125);
             email.Name = "email";
             email.Size = new Size(52, 20);
             email.TabIndex = 1;
@@ -64,7 +70,7 @@
             // sobrenome
             // 
             sobrenome.AutoSize = true;
-            sobrenome.Location = new Point(255, 110);
+            sobrenome.Location = new Point(217, 74);
             sobrenome.Name = "sobrenome";
             sobrenome.Size = new Size(86, 20);
             sobrenome.TabIndex = 2;
@@ -73,7 +79,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(282, 207);
+            label1.Location = new Point(229, 125);
             label1.Name = "label1";
             label1.Size = new Size(59, 20);
             label1.TabIndex = 3;
@@ -82,7 +88,7 @@
             // senha
             // 
             senha.AutoSize = true;
-            senha.Location = new Point(292, 254);
+            senha.Location = new Point(450, 125);
             senha.Name = "senha";
             senha.Size = new Size(49, 20);
             senha.TabIndex = 4;
@@ -91,7 +97,7 @@
             // confirmarSenha
             // 
             confirmarSenha.AutoSize = true;
-            confirmarSenha.Location = new Point(217, 298);
+            confirmarSenha.Location = new Point(164, 178);
             confirmarSenha.Name = "confirmarSenha";
             confirmarSenha.Size = new Size(124, 20);
             confirmarSenha.TabIndex = 5;
@@ -99,44 +105,46 @@
             // 
             // nomeText
             // 
-            nomeText.Location = new Point(347, 55);
+            nomeText.Location = new Point(75, 71);
             nomeText.Name = "nomeText";
             nomeText.Size = new Size(125, 27);
             nomeText.TabIndex = 6;
             // 
             // emailText
             // 
-            emailText.Location = new Point(347, 162);
+            emailText.Location = new Point(75, 122);
             emailText.Name = "emailText";
             emailText.Size = new Size(125, 27);
             emailText.TabIndex = 7;
             // 
             // sobrenomeText
             // 
-            sobrenomeText.Location = new Point(347, 110);
+            sobrenomeText.Location = new Point(308, 71);
             sobrenomeText.Name = "sobrenomeText";
-            sobrenomeText.Size = new Size(125, 27);
+            sobrenomeText.Size = new Size(371, 27);
             sobrenomeText.TabIndex = 8;
             // 
             // usuarioText
             // 
-            usuarioText.Location = new Point(347, 204);
+            usuarioText.Location = new Point(294, 122);
             usuarioText.Name = "usuarioText";
             usuarioText.Size = new Size(125, 27);
             usuarioText.TabIndex = 9;
             // 
             // confirmarSenhaText
             // 
-            confirmarSenhaText.Location = new Point(347, 298);
+            confirmarSenhaText.Location = new Point(294, 178);
             confirmarSenhaText.Name = "confirmarSenhaText";
             confirmarSenhaText.Size = new Size(125, 27);
             confirmarSenhaText.TabIndex = 10;
+            confirmarSenhaText.UseSystemPasswordChar = true;
             // 
             // button1
             // 
-            button1.Location = new Point(325, 381);
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Location = new Point(294, 247);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(108, 41);
             button1.TabIndex = 11;
             button1.Text = "Cadastrar";
             button1.UseVisualStyleBackColor = true;
@@ -144,16 +152,54 @@
             // 
             // senhaText
             // 
-            senhaText.Location = new Point(347, 251);
+            senhaText.Location = new Point(504, 122);
             senhaText.Name = "senhaText";
             senhaText.Size = new Size(125, 27);
             senhaText.TabIndex = 12;
+            senhaText.UseSystemPasswordChar = true;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(268, 9);
+            label2.Name = "label2";
+            label2.Size = new Size(160, 46);
+            label2.TabIndex = 13;
+            label2.Text = "Cadastro:";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Cursor = Cursors.Hand;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(635, 122);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(30, 27);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 14;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += PictureBox1_Click;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Cursor = Cursors.Hand;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(425, 178);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(30, 27);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 15;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += PictureBox2_Click;
             // 
             // TelaCadastro
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(718, 311);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
+            Controls.Add(label2);
             Controls.Add(senhaText);
             Controls.Add(button1);
             Controls.Add(confirmarSenhaText);
@@ -169,6 +215,8 @@
             Controls.Add(nome);
             Name = "TelaCadastro";
             Text = "Tela de Cadastro";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -188,5 +236,8 @@
         private TextBox confirmarSenhaText;
         private Button button1;
         private TextBox senhaText;
+        private Label label2;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }

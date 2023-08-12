@@ -17,7 +17,7 @@
                 this.usuario = usuario;
             }
         }
-        TelaLogin telaLogin;
+        readonly TelaLogin telaLogin;
         public TelaCadastro(TelaLogin telaLog)
         {
             InitializeComponent();
@@ -32,16 +32,16 @@
             senhaText.BackColor = Color.White;
             confirmarSenhaText.BackColor = Color.White;
             Cliente cliente = new(nomeText.Text, sobrenomeText.Text, emailText.Text, usuarioText.Text);
-            if (senhaText.Text == confirmarSenhaText.Text)
-            {
-                cliente.senha = senhaText.Text;
-            }
-            else
+            if (senhaText.Text != confirmarSenhaText.Text)
             {
                 MessageBox.Show("Confirmação de senha incorreta!!");
                 confirmarSenhaText.BackColor = Color.Red;
             }
-            if (cliente.nome != null && cliente.sobrenome != null && cliente.email != null && cliente.usuario != null && cliente.senha != null)
+            else
+            {
+                cliente.senha = senhaText.Text;
+            }
+            if (cliente.nome != string.Empty && cliente.sobrenome != string.Empty && cliente.email != string.Empty && cliente.usuario != string.Empty && cliente.senha != string.Empty && senhaText.Text == confirmarSenhaText.Text)
             {
                 MessageBox.Show("Cadastro efetuado com sucesso");
                 telaLogin.Show();
@@ -49,30 +49,54 @@
                 telaLogin.senha = cliente.senha;
                 this.Close();
             }
-            if (cliente.nome == null)
+            if (cliente.nome == string.Empty)
             {
                 MessageBox.Show("Campo Nome vazio!!");
                 nomeText.BackColor = Color.Red;
             }
-            if (cliente.sobrenome == null)
+            if (cliente.sobrenome == string.Empty)
             {
                 MessageBox.Show("Campo Sobrenome vazio!!");
                 sobrenomeText.BackColor = Color.Red;
             }
-            if (cliente.email == null)
+            if (cliente.email == string.Empty)
             {
                 MessageBox.Show("Campo E-mail vazio!!");
                 emailText.BackColor = Color.Red;
             }
-            if (cliente.usuario == null)
+            if (cliente.usuario == string.Empty)
             {
                 MessageBox.Show("Campo Usuário vazio!!");
                 usuarioText.BackColor = Color.Red;
             }
-            if (cliente.senha == null)
+            if (cliente.senha == string.Empty)
             {
                 MessageBox.Show("Não foi possível cadastrar a senha!!");
                 senhaText.BackColor = Color.Red;
+            }
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+            if (senhaText.UseSystemPasswordChar == false)
+            {
+                senhaText.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                senhaText.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void PictureBox2_Click(object sender, EventArgs e)
+        {
+            if (confirmarSenhaText.UseSystemPasswordChar == false)
+            {
+                confirmarSenhaText.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                confirmarSenhaText.UseSystemPasswordChar = false;
             }
         }
     }
