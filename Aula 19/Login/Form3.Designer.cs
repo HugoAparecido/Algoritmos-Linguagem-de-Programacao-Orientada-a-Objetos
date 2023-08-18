@@ -79,7 +79,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(229, 125);
+            label1.Location = new Point(489, 128);
             label1.Name = "label1";
             label1.Size = new Size(59, 20);
             label1.TabIndex = 3;
@@ -88,7 +88,7 @@
             // senha
             // 
             senha.AutoSize = true;
-            senha.Location = new Point(450, 125);
+            senha.Location = new Point(21, 180);
             senha.Name = "senha";
             senha.Size = new Size(49, 20);
             senha.TabIndex = 4;
@@ -97,7 +97,7 @@
             // confirmarSenha
             // 
             confirmarSenha.AutoSize = true;
-            confirmarSenha.Location = new Point(164, 178);
+            confirmarSenha.Location = new Point(382, 180);
             confirmarSenha.Name = "confirmarSenha";
             confirmarSenha.Size = new Size(124, 20);
             confirmarSenha.TabIndex = 5;
@@ -114,7 +114,7 @@
             // 
             emailText.Location = new Point(75, 122);
             emailText.Name = "emailText";
-            emailText.Size = new Size(125, 27);
+            emailText.Size = new Size(392, 27);
             emailText.TabIndex = 7;
             // 
             // sobrenomeText
@@ -126,14 +126,14 @@
             // 
             // usuarioText
             // 
-            usuarioText.Location = new Point(294, 122);
+            usuarioText.Location = new Point(554, 125);
             usuarioText.Name = "usuarioText";
             usuarioText.Size = new Size(125, 27);
             usuarioText.TabIndex = 9;
             // 
             // confirmarSenhaText
             // 
-            confirmarSenhaText.Location = new Point(294, 178);
+            confirmarSenhaText.Location = new Point(512, 180);
             confirmarSenhaText.Name = "confirmarSenhaText";
             confirmarSenhaText.Size = new Size(125, 27);
             confirmarSenhaText.TabIndex = 10;
@@ -152,7 +152,7 @@
             // 
             // senhaText
             // 
-            senhaText.Location = new Point(504, 122);
+            senhaText.Location = new Point(75, 177);
             senhaText.Name = "senhaText";
             senhaText.Size = new Size(125, 27);
             senhaText.TabIndex = 12;
@@ -172,7 +172,7 @@
             // 
             pictureBox1.Cursor = Cursors.Hand;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(635, 122);
+            pictureBox1.Location = new Point(206, 177);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(30, 27);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -184,7 +184,7 @@
             // 
             pictureBox2.Cursor = Cursors.Hand;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(425, 178);
+            pictureBox2.Location = new Point(643, 180);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(30, 27);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;

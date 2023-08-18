@@ -14,7 +14,7 @@ namespace Login
             textBox2.BackColor = SystemColors.Window;
             if (textBox1.Text == usuario && textBox2.Text == senha && textBox1.Text != string.Empty && textBox2.Text != string.Empty)
             {
-                Form2 form = new();
+                TelaSistema form = new();
                 form.Show();
                 this.Hide();
             }
