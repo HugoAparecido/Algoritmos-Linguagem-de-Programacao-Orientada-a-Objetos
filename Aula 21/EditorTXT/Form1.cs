@@ -43,5 +43,20 @@ namespace EditorTXT
         {
 
         }
+
+        private void pintarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorDialog = new ColorDialog();
+            colorDialog.ShowDialog();
+            richTextBox1.ForeColor = colorDialog.Color;
+        }
+
+        private void EditarFontToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fontDialog1 = new FontDialog();
+            fontDialog1.ShowDialog();
+            richTextBox1.Font = fontDialog1.Font;
+            richTextBox1.ForeColor = fontDialog1.Color;
+        }
     }
 }

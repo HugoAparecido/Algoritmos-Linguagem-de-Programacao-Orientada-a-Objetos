@@ -36,9 +36,10 @@
             abrirLocalmenteToolStripMenuItem = new ToolStripMenuItem();
             abrirComONotepadToolStripMenuItem = new ToolStripMenuItem();
             deletarTextoToolStripMenuItem = new ToolStripMenuItem();
-            fontDialog1 = new FontDialog();
             formatarTextoToolStripMenuItem = new ToolStripMenuItem();
             pintarToolStripMenuItem = new ToolStripMenuItem();
+            fontDialog1 = new FontDialog();
+            editarFontToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -72,7 +73,7 @@
             // salvarTextoToolStripMenuItem
             // 
             salvarTextoToolStripMenuItem.Name = "salvarTextoToolStripMenuItem";
-            salvarTextoToolStripMenuItem.Size = new Size(224, 26);
+            salvarTextoToolStripMenuItem.Size = new Size(181, 26);
             salvarTextoToolStripMenuItem.Text = "Salvar Texto";
             salvarTextoToolStripMenuItem.Click += SalvarTextoToolStripMenuItem_Click;
             // 
@@ -80,7 +81,7 @@
             // 
             abrirTextoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { abrirLocalmenteToolStripMenuItem, abrirComONotepadToolStripMenuItem });
             abrirTextoToolStripMenuItem.Name = "abrirTextoToolStripMenuItem";
-            abrirTextoToolStripMenuItem.Size = new Size(224, 26);
+            abrirTextoToolStripMenuItem.Size = new Size(181, 26);
             abrirTextoToolStripMenuItem.Text = "Abrir Texto";
             // 
             // abrirLocalmenteToolStripMenuItem
@@ -100,13 +101,13 @@
             // deletarTextoToolStripMenuItem
             // 
             deletarTextoToolStripMenuItem.Name = "deletarTextoToolStripMenuItem";
-            deletarTextoToolStripMenuItem.Size = new Size(224, 26);
+            deletarTextoToolStripMenuItem.Size = new Size(181, 26);
             deletarTextoToolStripMenuItem.Text = "Deletar Texto";
             deletarTextoToolStripMenuItem.Click += DeletarTextoToolStripMenuItem_Click;
             // 
             // formatarTextoToolStripMenuItem
             // 
-            formatarTextoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { pintarToolStripMenuItem });
+            formatarTextoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { pintarToolStripMenuItem, editarFontToolStripMenuItem });
             formatarTextoToolStripMenuItem.Name = "formatarTextoToolStripMenuItem";
             formatarTextoToolStripMenuItem.Size = new Size(123, 24);
             formatarTextoToolStripMenuItem.Text = "Formatar Texto";
@@ -116,6 +117,14 @@
             pintarToolStripMenuItem.Name = "pintarToolStripMenuItem";
             pintarToolStripMenuItem.Size = new Size(224, 26);
             pintarToolStripMenuItem.Text = "Pintar";
+            pintarToolStripMenuItem.Click += pintarToolStripMenuItem_Click;
+            // 
+            // editarFontToolStripMenuItem
+            // 
+            editarFontToolStripMenuItem.Name = "editarFontToolStripMenuItem";
+            editarFontToolStripMenuItem.Size = new Size(224, 26);
+            editarFontToolStripMenuItem.Text = "Editar Font";
+            editarFontToolStripMenuItem.Click += EditarFontToolStripMenuItem_Click;
             // 
             // Form1
             // 
@@ -146,5 +155,6 @@
         private FontDialog fontDialog1;
         private ToolStripMenuItem formatarTextoToolStripMenuItem;
         private ToolStripMenuItem pintarToolStripMenuItem;
+        private ToolStripMenuItem editarFontToolStripMenuItem;
     }
 }
