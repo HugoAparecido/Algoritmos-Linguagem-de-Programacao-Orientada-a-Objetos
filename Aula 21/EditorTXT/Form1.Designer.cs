@@ -36,7 +36,9 @@
             abrirLocalmenteToolStripMenuItem = new ToolStripMenuItem();
             abrirComONotepadToolStripMenuItem = new ToolStripMenuItem();
             deletarTextoToolStripMenuItem = new ToolStripMenuItem();
-            listBox1 = new ListBox();
+            fontDialog1 = new FontDialog();
+            formatarTextoToolStripMenuItem = new ToolStripMenuItem();
+            pintarToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -52,7 +54,7 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { opçõesDeAçãoToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { opçõesDeAçãoToolStripMenuItem, formatarTextoToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(899, 28);
@@ -65,6 +67,7 @@
             opçõesDeAçãoToolStripMenuItem.Name = "opçõesDeAçãoToolStripMenuItem";
             opçõesDeAçãoToolStripMenuItem.Size = new Size(132, 24);
             opçõesDeAçãoToolStripMenuItem.Text = "Opções de Ação";
+            opçõesDeAçãoToolStripMenuItem.Click += opçõesDeAçãoToolStripMenuItem_Click;
             // 
             // salvarTextoToolStripMenuItem
             // 
@@ -99,24 +102,26 @@
             deletarTextoToolStripMenuItem.Name = "deletarTextoToolStripMenuItem";
             deletarTextoToolStripMenuItem.Size = new Size(224, 26);
             deletarTextoToolStripMenuItem.Text = "Deletar Texto";
-            deletarTextoToolStripMenuItem.Click += deletarTextoToolStripMenuItem_Click;
+            deletarTextoToolStripMenuItem.Click += DeletarTextoToolStripMenuItem_Click;
             // 
-            // listBox1
+            // formatarTextoToolStripMenuItem
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 20;
-            listBox1.Location = new Point(12, 31);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(875, 484);
-            listBox1.TabIndex = 2;
-            listBox1.Visible = false;
+            formatarTextoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { pintarToolStripMenuItem });
+            formatarTextoToolStripMenuItem.Name = "formatarTextoToolStripMenuItem";
+            formatarTextoToolStripMenuItem.Size = new Size(123, 24);
+            formatarTextoToolStripMenuItem.Text = "Formatar Texto";
+            // 
+            // pintarToolStripMenuItem
+            // 
+            pintarToolStripMenuItem.Name = "pintarToolStripMenuItem";
+            pintarToolStripMenuItem.Size = new Size(224, 26);
+            pintarToolStripMenuItem.Text = "Pintar";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(899, 522);
-            Controls.Add(listBox1);
             Controls.Add(richTextBox1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
@@ -138,6 +143,8 @@
         private ToolStripMenuItem deletarTextoToolStripMenuItem;
         private ToolStripMenuItem abrirLocalmenteToolStripMenuItem;
         private ToolStripMenuItem abrirComONotepadToolStripMenuItem;
-        private ListBox listBox1;
+        private FontDialog fontDialog1;
+        private ToolStripMenuItem formatarTextoToolStripMenuItem;
+        private ToolStripMenuItem pintarToolStripMenuItem;
     }
 }

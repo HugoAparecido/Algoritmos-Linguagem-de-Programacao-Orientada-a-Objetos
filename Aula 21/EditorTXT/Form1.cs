@@ -18,16 +18,11 @@ namespace EditorTXT
 
         private void AbrirLocalmenteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            richTextBox1.Visible = false;
-            listBox1.Visible = true;
             StreamReader texto2;
             string caminho = "D:\\Atividades de programação e desenvolvimento feitos no Instituto Federal\\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\\Aula 21\\Hugo.txt";
             texto2 = File.OpenText(caminho);
-            while (texto2.EndOfStream != true)
-            {
-                string textoLido = texto2.ReadLine();
-                listBox1.Items.Add(textoLido);
-            }
+            string todoTexto = texto2.ReadToEnd();
+            richTextBox1.Text = todoTexto;
             texto2.Close();
         }
 
@@ -37,13 +32,16 @@ namespace EditorTXT
             System.Diagnostics.Process.Start("notepad", caminho);
         }
 
-        private void deletarTextoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void DeletarTextoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string caminho = "D:\\Atividades de programação e desenvolvimento feitos no Instituto Federal\\Algoritmos-Linguagem-de-Programa--o-Orientada-a-Objetos\\Aula 21\\Hugo.txt";
             File.Delete(caminho);
-            richTextBox1.Visible = true;
-            listBox1.Visible = false;
             richTextBox1.Text = "";
+        }
+
+        private void opçõesDeAçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
