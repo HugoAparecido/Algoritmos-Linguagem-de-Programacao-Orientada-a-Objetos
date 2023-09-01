@@ -50,7 +50,6 @@
             menuStrip1 = new MenuStrip();
             calculadoraCientíficaToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
-            SuspendLayout();
             // 
             // calculo
             // 

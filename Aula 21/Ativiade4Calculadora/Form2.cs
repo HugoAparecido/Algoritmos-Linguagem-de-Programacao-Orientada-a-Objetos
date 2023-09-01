@@ -16,5 +16,10 @@ namespace Ativiade4Calculadora
         {
             InitializeComponent();
         }
+
+        private void calculadoraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
