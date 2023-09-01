@@ -95,5 +95,22 @@ namespace Ativiade4Calculadora
             calculo.Text = calculo.Text.Replace(",", ".");
             calculo.Text = dataTable.Compute(calculo.Text, String.Empty).ToString();
         }
+
+        private void ApagarTudo_Click(object sender, EventArgs e)
+        {
+            if (calculo.Text.Length > 0)
+            {
+                string texto = calculo.Text;
+                texto = texto[..^1];
+                calculo.Text = texto;
+            }
+        }
+
+        private void CalculadoraCientíficaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new();
+            form2.ShowDialog();
+            this.Hide();
+        }
     }
 }

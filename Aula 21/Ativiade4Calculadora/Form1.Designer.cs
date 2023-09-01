@@ -46,20 +46,25 @@
             divisao = new Button();
             calcular = new Button();
             casaDecimal = new Button();
+            ApagarUltimo = new Button();
+            menuStrip1 = new MenuStrip();
+            calculadoraCientíficaToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // calculo
             // 
-            calculo.Location = new Point(12, 12);
+            calculo.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            calculo.Location = new Point(11, 67);
             calculo.Name = "calculo";
-            calculo.Size = new Size(540, 27);
+            calculo.Size = new Size(274, 45);
             calculo.TabIndex = 0;
             // 
             // button1
             // 
-            button1.Location = new Point(12, 45);
+            button1.Location = new Point(11, 120);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(50, 50);
             button1.TabIndex = 1;
             button1.Text = "1";
             button1.UseVisualStyleBackColor = true;
@@ -67,9 +72,9 @@
             // 
             // button2
             // 
-            button2.Location = new Point(112, 45);
+            button2.Location = new Point(67, 120);
             button2.Name = "button2";
-            button2.Size = new Size(94, 29);
+            button2.Size = new Size(50, 50);
             button2.TabIndex = 2;
             button2.Text = "2";
             button2.UseVisualStyleBackColor = true;
@@ -77,9 +82,9 @@
             // 
             // button3
             // 
-            button3.Location = new Point(212, 45);
+            button3.Location = new Point(123, 120);
             button3.Name = "button3";
-            button3.Size = new Size(94, 29);
+            button3.Size = new Size(50, 50);
             button3.TabIndex = 3;
             button3.Text = "3";
             button3.UseVisualStyleBackColor = true;
@@ -87,9 +92,9 @@
             // 
             // button4
             // 
-            button4.Location = new Point(12, 80);
+            button4.Location = new Point(11, 176);
             button4.Name = "button4";
-            button4.Size = new Size(94, 29);
+            button4.Size = new Size(50, 50);
             button4.TabIndex = 4;
             button4.Text = "4";
             button4.UseVisualStyleBackColor = true;
@@ -97,9 +102,9 @@
             // 
             // button5
             // 
-            button5.Location = new Point(112, 80);
+            button5.Location = new Point(67, 176);
             button5.Name = "button5";
-            button5.Size = new Size(94, 29);
+            button5.Size = new Size(50, 50);
             button5.TabIndex = 5;
             button5.Text = "5";
             button5.UseVisualStyleBackColor = true;
@@ -107,9 +112,9 @@
             // 
             // button6
             // 
-            button6.Location = new Point(212, 80);
+            button6.Location = new Point(123, 176);
             button6.Name = "button6";
-            button6.Size = new Size(94, 29);
+            button6.Size = new Size(50, 50);
             button6.TabIndex = 6;
             button6.Text = "6";
             button6.UseVisualStyleBackColor = true;
@@ -117,9 +122,9 @@
             // 
             // button7
             // 
-            button7.Location = new Point(12, 115);
+            button7.Location = new Point(11, 232);
             button7.Name = "button7";
-            button7.Size = new Size(94, 29);
+            button7.Size = new Size(50, 50);
             button7.TabIndex = 7;
             button7.Text = "7";
             button7.UseVisualStyleBackColor = true;
@@ -127,9 +132,9 @@
             // 
             // button8
             // 
-            button8.Location = new Point(112, 115);
+            button8.Location = new Point(67, 232);
             button8.Name = "button8";
-            button8.Size = new Size(94, 29);
+            button8.Size = new Size(50, 50);
             button8.TabIndex = 8;
             button8.Text = "8";
             button8.UseVisualStyleBackColor = true;
@@ -137,9 +142,9 @@
             // 
             // button9
             // 
-            button9.Location = new Point(212, 115);
+            button9.Location = new Point(123, 232);
             button9.Name = "button9";
-            button9.Size = new Size(94, 29);
+            button9.Size = new Size(50, 50);
             button9.TabIndex = 9;
             button9.Text = "9";
             button9.UseVisualStyleBackColor = true;
@@ -147,9 +152,9 @@
             // 
             // button0
             // 
-            button0.Location = new Point(312, 45);
+            button0.Location = new Point(11, 288);
             button0.Name = "button0";
-            button0.Size = new Size(94, 29);
+            button0.Size = new Size(50, 50);
             button0.TabIndex = 10;
             button0.Text = "0";
             button0.UseVisualStyleBackColor = true;
@@ -157,20 +162,19 @@
             // 
             // clear
             // 
-            clear.Location = new Point(412, 45);
+            clear.Location = new Point(235, 120);
             clear.Name = "clear";
-            clear.Size = new Size(94, 29);
+            clear.Size = new Size(50, 50);
             clear.TabIndex = 11;
-            clear.Text = "C";
-            clear.TextAlign = ContentAlignment.BottomCenter;
+            clear.Text = "CE";
             clear.UseVisualStyleBackColor = true;
             clear.Click += Clear_Click;
             // 
             // adicao
             // 
-            adicao.Location = new Point(312, 80);
+            adicao.Location = new Point(179, 120);
             adicao.Name = "adicao";
-            adicao.Size = new Size(94, 29);
+            adicao.Size = new Size(50, 50);
             adicao.TabIndex = 12;
             adicao.Text = "+";
             adicao.UseVisualStyleBackColor = true;
@@ -178,9 +182,9 @@
             // 
             // subtracao
             // 
-            subtracao.Location = new Point(412, 80);
+            subtracao.Location = new Point(179, 176);
             subtracao.Name = "subtracao";
-            subtracao.Size = new Size(94, 29);
+            subtracao.Size = new Size(50, 50);
             subtracao.TabIndex = 13;
             subtracao.Text = "-";
             subtracao.UseVisualStyleBackColor = true;
@@ -188,9 +192,9 @@
             // 
             // multiplicacao
             // 
-            multiplicacao.Location = new Point(312, 115);
+            multiplicacao.Location = new Point(179, 232);
             multiplicacao.Name = "multiplicacao";
-            multiplicacao.Size = new Size(94, 29);
+            multiplicacao.Size = new Size(50, 50);
             multiplicacao.TabIndex = 14;
             multiplicacao.Text = "*";
             multiplicacao.UseVisualStyleBackColor = true;
@@ -198,9 +202,9 @@
             // 
             // divisao
             // 
-            divisao.Location = new Point(412, 115);
+            divisao.Location = new Point(179, 288);
             divisao.Name = "divisao";
-            divisao.Size = new Size(94, 29);
+            divisao.Size = new Size(50, 50);
             divisao.TabIndex = 15;
             divisao.Text = "/";
             divisao.UseVisualStyleBackColor = true;
@@ -208,9 +212,9 @@
             // 
             // calcular
             // 
-            calcular.Location = new Point(512, 46);
+            calcular.Location = new Point(235, 176);
             calcular.Name = "calcular";
-            calcular.Size = new Size(40, 63);
+            calcular.Size = new Size(50, 162);
             calcular.TabIndex = 16;
             calcular.Text = "=";
             calcular.UseVisualStyleBackColor = true;
@@ -218,19 +222,48 @@
             // 
             // casaDecimal
             // 
-            casaDecimal.Location = new Point(512, 115);
+            casaDecimal.Location = new Point(67, 288);
             casaDecimal.Name = "casaDecimal";
-            casaDecimal.Size = new Size(40, 29);
+            casaDecimal.Size = new Size(50, 50);
             casaDecimal.TabIndex = 17;
             casaDecimal.Text = ",";
             casaDecimal.UseVisualStyleBackColor = true;
             casaDecimal.Click += CasaDecimal_Click;
             // 
+            // ApagarUltimo
+            // 
+            ApagarUltimo.Location = new Point(123, 288);
+            ApagarUltimo.Name = "ApagarUltimo";
+            ApagarUltimo.Size = new Size(50, 50);
+            ApagarUltimo.TabIndex = 18;
+            ApagarUltimo.Text = "C";
+            ApagarUltimo.UseVisualStyleBackColor = true;
+            ApagarUltimo.Click += ApagarTudo_Click;
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { calculadoraCientíficaToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(297, 36);
+            menuStrip1.TabIndex = 19;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // calculadoraCientíficaToolStripMenuItem
+            // 
+            calculadoraCientíficaToolStripMenuItem.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            calculadoraCientíficaToolStripMenuItem.Name = "calculadoraCientíficaToolStripMenuItem";
+            calculadoraCientíficaToolStripMenuItem.Size = new Size(214, 32);
+            calculadoraCientíficaToolStripMenuItem.Text = "Calculadora Científica";
+            calculadoraCientíficaToolStripMenuItem.Click += CalculadoraCientíficaToolStripMenuItem_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(566, 162);
+            ClientSize = new Size(297, 347);
+            Controls.Add(ApagarUltimo);
             Controls.Add(casaDecimal);
             Controls.Add(calcular);
             Controls.Add(divisao);
@@ -249,8 +282,12 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(calculo);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
             Name = "Form1";
             Text = "Calculadora";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -275,5 +312,8 @@
         private Button divisao;
         private Button calcular;
         private Button casaDecimal;
+        private Button ApagarUltimo;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem calculadoraCientíficaToolStripMenuItem;
     }
 }
