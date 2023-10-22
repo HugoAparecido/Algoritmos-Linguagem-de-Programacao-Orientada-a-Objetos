@@ -33,7 +33,6 @@ namespace trabalho0610
             listView1.Columns.Add("NOTA_BIM3", 100, HorizontalAlignment.Left);
             listView1.Columns.Add("NOTA_BIM4", 100, HorizontalAlignment.Left);
             listView1.Columns.Add("MEDIA", 100, HorizontalAlignment.Left);
-
             listView2.View = View.Details;
             listView2.LabelEdit = true;
             listView2.AllowColumnReorder = true;
@@ -53,7 +52,7 @@ namespace trabalho0610
         private void button1_Click(object sender, EventArgs e)
         {
             string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=cadastro_escolar;";
-            string query = "SELECT * FROM aluno";
+            string query = "SELECT * FROM aluno WHERE nome LIKE '%" + textBox1.Text + "%'";
             MySqlConnection databaseConnection = new MySqlConnection(connectionString);
             MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
             commandDatabase.CommandTimeout = 60;
@@ -86,14 +85,14 @@ namespace trabalho0610
 
         private void alunoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2(this, null);
+            Form2 form2 = new Form2(this, null, null);
             form2.Show();
             this.Hide();
         }
 
         private void cursoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3(this, null);
+            Form3 form3 = new Form3(this, null, null);
             form3.Show();
             this.Hide();
         }
@@ -106,7 +105,7 @@ namespace trabalho0610
         private void button2_Click(object sender, EventArgs e)
         {
             string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=cadastro_escolar;";
-            string query = "SELECT * FROM curso";
+            string query = "SELECT * FROM curso WHERE nome LIKE '%" + textBox2.Text + "%'";
             MySqlConnection databaseConnection = new MySqlConnection(connectionString);
             MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
             commandDatabase.CommandTimeout = 60;
@@ -139,12 +138,18 @@ namespace trabalho0610
 
         private void listView2_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            System.Windows.Forms.ListView.SelectedListViewItemCollection itens_selecionados = listView2.SelectedItems;
+            Form3 form3 = new Form3(this, null, itens_selecionados);
+            form3.Show();
+            this.Hide();
         }
 
-        private void label1_Click_1(object sender, EventArgs e)
+        private void listView1_ItemSelectionChanged(object sender, ListViewItemSelectionChangedEventArgs e)
         {
-
+            System.Windows.Forms.ListView.SelectedListViewItemCollection itens_selecionados = listView1.SelectedItems;
+            Form2 form2 = new Form2(this, null, itens_selecionados);
+            form2.Show();
+            this.Hide();
         }
     }
 }

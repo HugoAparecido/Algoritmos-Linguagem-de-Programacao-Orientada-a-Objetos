@@ -14,17 +14,21 @@ namespace trabalho0610
 {
     public partial class Form3 : Form
     {
+        class Curso
+        {
+            private string nome;
+            private int codigo;
+            private int cargaHoraria;
+            private string periodo;
+        }
         readonly Form1 form1;
         readonly Form2 form2;
-        public Form3(Form1 form11, Form2 form22)
+        public Form3(Form1 form11, Form2 form22, string id)
         {
             InitializeComponent();
             form1 = form11;
             form2 = form22;
-        }
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            string id_selecionado = id;
         }
 
         private void cadastrarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -34,7 +38,7 @@ namespace trabalho0610
 
         private void alunoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2(null, this);
+            Form2 form2 = new Form2(null, this, null);
             form2.Show();
             this.Close();
         }
@@ -69,6 +73,11 @@ namespace trabalho0610
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
