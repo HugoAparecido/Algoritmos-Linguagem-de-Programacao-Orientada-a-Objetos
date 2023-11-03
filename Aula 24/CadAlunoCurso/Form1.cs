@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
+using System.Security.Policy;
 using System.Windows.Forms;
 
 namespace CadAlunoCurso
@@ -11,7 +12,6 @@ namespace CadAlunoCurso
             private readonly string ra;
             private readonly string nome;
             private readonly string cpf;
-            private readonly int codigo_curso;
             private readonly string email;
             private readonly string endereco;
             private readonly string telefone;
@@ -19,17 +19,17 @@ namespace CadAlunoCurso
             private readonly double nota_Bim2;
             private readonly double nota_Bim3;
             private readonly double nota_Bim4;
-            public double media;
-            private void Media()
+            private readonly double media;
+            private readonly int codigo_curso;
+            public double Media()
             {
-                this.media = ((this.nota_Bim1 + this.nota_Bim2 + this.nota_Bim3 + this.nota_Bim4) / 4);
+                return ((this.nota_Bim1 + this.nota_Bim2 + this.nota_Bim3 + this.nota_Bim4) / 4);
             }
             public Aluno(string ra, string nome, string cpf, int curso, string email, string endereco, string telefone, double nota_Bim1, double nota_Bim2, double nota_Bim3, double nota_Bim4)
             {
                 this.ra = ra;
                 this.nome = nome;
                 this.cpf = cpf;
-                this.codigo_curso = curso;
                 this.email = email;
                 this.endereco = endereco;
                 this.telefone = telefone;
@@ -37,7 +37,8 @@ namespace CadAlunoCurso
                 this.nota_Bim2 = nota_Bim2;
                 this.nota_Bim3 = nota_Bim3;
                 this.nota_Bim4 = nota_Bim4;
-                this.Media();
+                this.media = this.Media();
+                this.codigo_curso = curso;
             }
             public void Cadastrar()
             {
@@ -141,7 +142,7 @@ namespace CadAlunoCurso
         public class Curso
         {
             private readonly string nome;
-            private readonly int codigo;
+            public int codigo;
             private readonly int cargaHoraria;
             private readonly string periodo;
             public Curso(string nome, int codigo, int cargaHoraria, string periodo)

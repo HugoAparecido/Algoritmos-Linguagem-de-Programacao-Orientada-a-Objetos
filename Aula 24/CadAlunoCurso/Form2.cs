@@ -20,10 +20,10 @@ namespace CadAlunoCurso
                     caixaInsercaoRA.Text = item.SubItems[0].Text;
                     caixaInsercaoNome.Text = item.SubItems[1].Text;
                     caixaInsercaoCPF.Text = item.SubItems[2].Text;
-                    escolherCurso.Text = item.SubItems[3].Text;
-                    caixaInsercaoEmail.Text = item.SubItems[4].Text;
-                    caixaInsercaoEndereco.Text = item.SubItems[5].Text;
-                    caixaInsercaoTelefone.Text = item.SubItems[6].Text;
+                    caixaInsercaoEndereco.Text = item.SubItems[3].Text;
+                    caixaInsercaoTelefone.Text = item.SubItems[4].Text;
+                    caixaInsercaoEmail.Text = item.SubItems[5].Text;
+                    escolherCurso.Text = item.SubItems[6].Text;
                     caixaInsercaoNotaBim1.Text = item.SubItems[7].Text;
                     caixaInsercaoNotaBim2.Text = item.SubItems[8].Text;
                     caixaInsercaoNotaBim3.Text = item.SubItems[9].Text;
@@ -37,12 +37,24 @@ namespace CadAlunoCurso
         private void PesquisarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
-            formPesquisaLocal.ShowDialog();
+            formPesquisaLocal.Show();
         }
 
         private void AlunoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Refresh();
+            foreach (Control control in this.Controls)
+            {
+                if (control is System.Windows.Forms.TextBox)
+                {
+                    System.Windows.Forms.TextBox textBox = control as System.Windows.Forms.TextBox;
+                    textBox.Clear();
+                }
+                else if (control is System.Windows.Forms.ComboBox)
+                {
+                    System.Windows.Forms.ComboBox comboBox = control as System.Windows.Forms.ComboBox;
+                    comboBox.SelectedIndex = -1;
+                }
+            }
         }
 
         private void CursoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -54,26 +66,49 @@ namespace CadAlunoCurso
 
         private void CadastarAluno_Click(object sender, EventArgs e)
         {
-            FormPesquisa.Aluno aluno = new FormPesquisa.Aluno(caixaInsercaoRA.Text, caixaInsercaoNome.Text, caixaInsercaoCPF.Text, Convert.ToInt32(escolherCurso.SelectedIndex), caixaInsercaoEmail.Text, caixaInsercaoEndereco.Text, caixaInsercaoTelefone.Text, Convert.ToDouble(caixaInsercaoNotaBim1.Text), Convert.ToDouble(caixaInsercaoNotaBim2.Text), Convert.ToDouble(caixaInsercaoNotaBim3.Text), Convert.ToDouble(caixaInsercaoNotaBim4.Text));
+            string texto = escolherCurso.SelectedItem.ToString();
+            string capturar_codigo = texto.Substring(0, 1);
+            FormPesquisa.Aluno aluno = new FormPesquisa.Aluno(caixaInsercaoRA.Text, caixaInsercaoNome.Text, caixaInsercaoCPF.Text, Convert.ToInt32(capturar_codigo), caixaInsercaoEmail.Text, caixaInsercaoEndereco.Text, caixaInsercaoTelefone.Text, Convert.ToDouble(caixaInsercaoNotaBim1.Text), Convert.ToDouble(caixaInsercaoNotaBim2.Text), Convert.ToDouble(caixaInsercaoNotaBim3.Text), Convert.ToDouble(caixaInsercaoNotaBim4.Text));
             aluno.Cadastrar();
+            caixaMostrarMedia.Text = Convert.ToString(aluno.Media());
         }
 
         private void AtualizarAluno_Click(object sender, EventArgs e)
         {
-            FormPesquisa.Aluno aluno = new FormPesquisa.Aluno(caixaInsercaoRA.Text, caixaInsercaoNome.Text, caixaInsercaoCPF.Text, Convert.ToInt32(escolherCurso.SelectedIndex), caixaInsercaoEmail.Text, caixaInsercaoEndereco.Text, caixaInsercaoTelefone.Text, Convert.ToDouble(caixaInsercaoNotaBim1.Text), Convert.ToDouble(caixaInsercaoNotaBim2.Text), Convert.ToDouble(caixaInsercaoNotaBim3.Text), Convert.ToDouble(caixaInsercaoNotaBim4.Text));
+            string texto = escolherCurso.SelectedItem.ToString();
+            string capturar_codigo = texto.Substring(0, 1);
+            FormPesquisa.Aluno aluno = new FormPesquisa.Aluno(caixaInsercaoRA.Text, caixaInsercaoNome.Text, caixaInsercaoCPF.Text, Convert.ToInt32(capturar_codigo), caixaInsercaoEmail.Text, caixaInsercaoEndereco.Text, caixaInsercaoTelefone.Text, Convert.ToDouble(caixaInsercaoNotaBim1.Text), Convert.ToDouble(caixaInsercaoNotaBim2.Text), Convert.ToDouble(caixaInsercaoNotaBim3.Text), Convert.ToDouble(caixaInsercaoNotaBim4.Text));
             aluno.Atualizar();
         }
 
         private void DeletarAluno_Click(object sender, EventArgs e)
         {
-            FormPesquisa.Aluno aluno = new FormPesquisa.Aluno(caixaInsercaoRA.Text, caixaInsercaoNome.Text, caixaInsercaoCPF.Text, Convert.ToInt32(escolherCurso.SelectedIndex), caixaInsercaoEmail.Text, caixaInsercaoEndereco.Text, caixaInsercaoTelefone.Text, Convert.ToDouble(caixaInsercaoNotaBim1.Text), Convert.ToDouble(caixaInsercaoNotaBim2.Text), Convert.ToDouble(caixaInsercaoNotaBim3.Text), Convert.ToDouble(caixaInsercaoNotaBim4.Text));
+            FormPesquisa.Aluno aluno = new FormPesquisa.Aluno(caixaInsercaoRA.Text, caixaInsercaoNome.Text, caixaInsercaoCPF.Text, 0, caixaInsercaoEmail.Text, caixaInsercaoEndereco.Text, caixaInsercaoTelefone.Text, Convert.ToDouble(caixaInsercaoNotaBim1.Text), Convert.ToDouble(caixaInsercaoNotaBim2.Text), Convert.ToDouble(caixaInsercaoNotaBim3.Text), Convert.ToDouble(caixaInsercaoNotaBim4.Text));
             aluno.Deletar();
+            foreach (Control control in this.Controls)
+            {
+                if (control is System.Windows.Forms.TextBox)
+                {
+                    System.Windows.Forms.TextBox textBox = control as System.Windows.Forms.TextBox;
+                    textBox.Clear();
+                }
+                else if (control is System.Windows.Forms.ComboBox)
+                {
+                    System.Windows.Forms.ComboBox comboBox = control as System.Windows.Forms.ComboBox;
+                    comboBox.SelectedIndex = -1;
+                }
+                else if(control is System.Windows.Forms.MaskedTextBox)
+                {
+                    System.Windows.Forms.MaskedTextBox maskedTextBox = control as System.Windows.Forms.MaskedTextBox;
+                    maskedTextBox.Clear();
+                }
+            }
         }
 
         private void FormCadastrarAluno_Load(object sender, EventArgs e)
         {
             string connectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=cadastro_escolar_2;";
-            string query = "SELECT nome_curso, codigo_curso FROM curso";
+            string query = "SELECT codigo_curso, nome_curso FROM curso";
             MySqlConnection databaseConnection = new MySqlConnection(connectionString);
             MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection)
             {
@@ -86,12 +121,10 @@ namespace CadAlunoCurso
                 reader = commandDatabase.ExecuteReader();
                 if (reader.HasRows)
                 {
-                    escolherCurso.Items.Clear();
                     while (reader.Read())
                     {
                         string[] row = { reader.GetString(0), reader.GetString(1) };
-                        escolherCurso.Items.Add(row[0]);
-                        escolherCurso.Items.IndexOf(row[1]);
+                        escolherCurso.Items.Add(row[0] + " " + row[1]);
                     }
                 }
                 else

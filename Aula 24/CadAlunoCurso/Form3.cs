@@ -47,7 +47,19 @@ namespace CadAlunoCurso
 
         private void CursoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Refresh();
+            foreach (Control control in this.Controls)
+            {
+                if (control is System.Windows.Forms.TextBox)
+                {
+                    System.Windows.Forms.TextBox textBox = control as System.Windows.Forms.TextBox;
+                    textBox.Clear();
+                }
+                else if (control is System.Windows.Forms.ComboBox)
+                {
+                    System.Windows.Forms.ComboBox comboBox = control as System.Windows.Forms.ComboBox;
+                    comboBox.SelectedIndex = -1;
+                }
+            }
         }
 
         private void AtualizarCurso_Click(object sender, EventArgs e)
@@ -59,7 +71,20 @@ namespace CadAlunoCurso
         private void DeletarCurso_Click(object sender, EventArgs e)
         {
             FormPesquisa.Curso curso = new FormPesquisa.Curso(caixaInserirNomeCurso.Text, Convert.ToInt32(caixaMostrarCodigo.Text), Convert.ToInt32(caixaInserirCargaHoraria.Text), escolherPeriodo.Text);
-            curso.Deletar();
+            curso.Deletar(); 
+            foreach (Control control in this.Controls)
+            {
+                if (control is System.Windows.Forms.TextBox)
+                {
+                    System.Windows.Forms.TextBox textBox = control as System.Windows.Forms.TextBox;
+                    textBox.Clear();
+                }
+                else if (control is System.Windows.Forms.ComboBox)
+                {
+                    System.Windows.Forms.ComboBox comboBox = control as System.Windows.Forms.ComboBox;
+                    comboBox.SelectedIndex = -1;
+                }
+            }
         }
     }
 }
