@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -49,8 +51,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -78,6 +78,22 @@
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Operações";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 307);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(84, 16);
+            this.label10.TabIndex = 24;
+            this.label10.Text = "Salário Total";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(128, 301);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(175, 22);
+            this.textBox8.TabIndex = 23;
             // 
             // label9
             // 
@@ -151,9 +167,9 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(103, 145);
+            this.textBox4.Location = new System.Drawing.Point(112, 145);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(200, 22);
+            this.textBox4.Size = new System.Drawing.Size(191, 22);
             this.textBox4.TabIndex = 15;
             this.textBox4.Visible = false;
             // 
@@ -269,22 +285,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(230, 22);
             this.textBox3.TabIndex = 4;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 307);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(84, 16);
-            this.label10.TabIndex = 24;
-            this.label10.Text = "Salário Total";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(128, 301);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(175, 22);
-            this.textBox8.TabIndex = 23;
             // 
             // Form1
             // 

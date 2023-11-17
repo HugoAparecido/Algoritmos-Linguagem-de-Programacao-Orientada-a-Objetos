@@ -73,6 +73,14 @@ namespace AtividadeHeranca
             {
                 textBox5.Visible = true;
                 label6.Visible = true;
+                textBox4.Visible = false;
+                label4.Visible = false;
+                comboBox2.Visible = false;
+                label8.Visible = false;
+                textBox6.Visible = false;
+                label9.Visible = false;
+                textBox7.Visible = false;
+                label7.Visible = false;
             }
             if (comboBox1.Text == "Comissionado")
             {
@@ -80,6 +88,12 @@ namespace AtividadeHeranca
                 label4.Visible = true;
                 comboBox2.Visible = true;
                 label8.Visible = true;
+                textBox5.Visible = false;
+                label6.Visible = false;
+                textBox6.Visible = false;
+                label9.Visible = false;
+                textBox7.Visible = false;
+                label7.Visible = false;
             }
             if (comboBox1.Text == "Horista")
             {
@@ -87,6 +101,12 @@ namespace AtividadeHeranca
                 label9.Visible = true;
                 textBox7.Visible = true;
                 label7.Visible = true;
+                textBox5.Visible = false;
+                label6.Visible = false;
+                textBox4.Visible = false;
+                label4.Visible = false;
+                comboBox2.Visible = false;
+                label8.Visible = false;
             }
         }
 
@@ -100,13 +120,13 @@ namespace AtividadeHeranca
 
             if (comboBox1.Text == "Comissionado")
             {
-                Comissionado comissionado = new Comissionado(Convert.ToDouble(textBox4.Text), Convert.ToDouble(comboBox2.Text));
+                Comissionado comissionado = new Comissionado(Convert.ToDouble(textBox4.Text), Convert.ToDouble(comboBox2.SelectedItem));
                 textBox8.Text = Convert.ToString(comissionado.Vencimento());
             }
-            if (comboBox1.Text == "Comissionado")
+            if (comboBox1.Text == "Horista")
             {
-                Horista comissionado = new Horista(Convert.ToDouble(textBox7.Text), Convert.ToDouble(textBox6.Text));
-                textBox8.Text = Convert.ToString(comissionado.Vencimento());
+                Horista horista = new Horista(Convert.ToDouble(textBox7.Text), Convert.ToDouble(textBox6.Text));
+                textBox8.Text = Convert.ToString(horista.Vencimento());
             }
         }
     }
